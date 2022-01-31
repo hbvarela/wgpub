@@ -1,0 +1,73 @@
+#corpo
+{
+	background-color: #0f0f0f;
+	color: gainsboro;
+	overflow: hidden;
+	text-align: center;
+	font-family: 'atari';
+}
+canvas
+{
+	top: 0px;
+	width: 100%;
+	height: 95%;
+}
+.gameover
+{
+	position: fixed;
+	display: flex;
+	background-color: inherit;
+	align-items: center;
+	justify-content: center;
+	width: 36%;
+	height: 46%;
+	top: 25%;
+	left: 33%;
+	overflow: none;
+}
+#pontu{
+	color: inherit;
+	font-size: 4em;
+}
+#startId{
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
+	padding: 0.25em;
+	width: 100%;
+	font-size: 2em;
+	font-family: 'atari';
+}
+.spandiv
+{
+	user-select: none;
+	position: absolute;
+	bottom: 0px;
+	font-size: 2em;
+	height: 5%;
+	width: 100%;
+	background-color: inherit;
+	color: inherit;
+}
+
+#light, #dark{
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
+	font-size: 1.5em;
+	font-family: 'atari';
+}
+
+#light:hover{
+    background: linear-gradient(1deg, yellow, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    cursor: pointer;
+}
+
+#dark:hover{
+    background: linear-gradient(1deg, blue, darkviolet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}

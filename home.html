@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Welcome!
+        </title>
+        <link rel="stylesheet" href="home.css">
+        <style>
+            @font-face
+            {
+                font-family: 'atari';
+                src: url('atari.ttf');
+                font-weight: normal;
+                font-style: normal;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="mainTitle">
+            <h1>LOADING...</h1>
+        </div>
+
+        <div id="gameMenu">
+
+            <button id="di" class="collapsible">
+                HOW TO PLAY?
+            </button>
+            <div class="content">
+                <div id="htpl">
+                    MOUSE 1.......MOVE 
+                </div>
+                <div id="htpr">
+                    SPACEBAR......STOP 
+                </div><br>
+            </div>
+
+            <button class="collapsible" onclick="location.href = 'game.html'">
+            LET'S PLAY!
+            </button>        
+
+            <button class="collapsible">
+                COLOR MODE
+            </button>
+            <div class="content">
+                <p id="light" onclick="colormode(1)">
+                    LIGHT MODE 
+                </p>
+                <p id="dark" onclick="colormode(2)">
+                    DARK MODE
+                </p>
+            </div>    
+            
+            <button class="collapsible">
+                RATE US
+            </button>
+            <div class="content">
+                <form>
+                    <fieldset style="text-align: center; border: none">
+                        
+                        <div style="width: 60%; height: 100%; float: left">
+                            <label class="lL" for="nn">NICKNAME:</label>
+                            <br>
+                            <label class="lL" for="email">E-MAIL:</label>
+                            <br>
+                            <label class="lL" for="review">AVALIE-NOS:</label>
+                            <br>
+                        </div>
+
+                        <div style="width: 40%; height: 100%; float: left">
+                            <input type="text" id="nn" tabindex="1">
+                            <br>
+                            <input type="email" id="email" tabindex="2">
+                            <br>
+                            <input class="bolinha" type="radio" name="review" id="ruim" tabindex="3">
+                            <label class="lL" for="ruim"><dd>RUIM</dd></label>
+                            <br>
+                            <input class="bolinha" type="radio" name="review" id="regular" tabindex="3">
+                            <label class="lL" for="regular"><dd>REGULAR</dd></label>
+                            <br>
+                            <input class="bolinha" type="radio" name="review" id="bom" tabindex="3">
+                            <label class="lL" for="bom"><dd>BOM</dd></label><br>
+                            <br>
+                        </div>
+                        <input class="rsbutton" type="reset" name="Limpar" tabindex="4">
+                        <input class="rsbutton" type="submit" value="Enviar" tabindex="5" onclick="feedback()">
+                    </fieldset>
+                </form>
+            </div>
+
+            <button class="collapsible">
+                ABOUT US
+            </button>
+            <div class="content">
+                <p>THERE'S NOTHING TO KNOW ABOUT US</p>
+            </div>
+
+            <button class="collapsible">PRIVACY POLYCE</button>
+            <div id="df" class="content">
+                <p>WE STEAL AS MUCH INFORMATION AS WE CAN</p>
+            </div>
+        </div>
+
+        <div id="bottDiv">
+            <p>POWERED BY MR. NOBODY</p>
+        </div>
+
+    </body>
+
+    <script src="home.js"></script>
+
+</html>

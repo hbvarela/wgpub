@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="game.css">
+	<style>
+            @font-face
+            {
+                font-family: 'atari';
+                src: url('atari.ttf');
+                font-weight: normal;
+                font-style: normal;
+            }
+        </style>
+</head>
+
+<body id="corpo">
+
+	<div class="gameover" id="goid">
+		<div>
+			<h1 id="pontu">
+				0
+			</h1>
+			<div>
+				<button id="startId">
+					START
+				</button>
+			</div>
+			<div>
+				<p id="light" onclick="gamecolor(1)">
+                    LIGHT MODE 
+                </p>
+                <p id="dark" onclick="gamecolor(2)">
+                    DARK MODE
+                </p>
+			</div>
+		</div>
+	</div>
+
+	<canvas>
+	</canvas>
+
+	<div class="spandiv">
+		<span>
+			SURVIVE TIME:
+		</span>
+		<span id='fireCounter'>
+			0
+		</span>
+		<span>
+			s
+		</span>
+	</div>
+
+</body>
+
+<script src="game.js"></script>
+
+</html>

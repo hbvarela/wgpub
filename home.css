@@ -1,0 +1,166 @@
+body
+{
+    background-color: #0f0f0f;
+    color: gainsboro;
+    font-family: 'atari';
+    font-size: 2em;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+.bolinha
+{
+    float: left; 
+}
+.lL
+{
+    float: left;
+}
+#htpl
+{
+    width: 100%;
+    height: 50%    
+}
+#htpr
+{
+    width: 100%;
+    height: 50% 
+}
+
+button
+{
+    font-family: 'atari';
+    border: none
+}
+a:link
+{
+    color: inherit;
+    text-decoration: none;
+}
+a:visited
+{
+    color: inherit;
+    text-decoration: none;
+}
+#mainTitle
+{
+    background-color: inherit;
+    font-family: inherit;
+    width: 50%;
+    position: relative;
+    top: 20%;
+    left: 25%;
+    text-align: center;
+    color: inherit;
+}
+#bottDiv
+{
+    background-color: inherit;
+    font-family: inherit;
+    text-align: center;
+    position: relative;
+    width: 50%;
+    bottom: 0%;
+    left: 25%;
+    color: inherit;
+}
+#gameMenu
+{
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    left: 25%;
+}
+.collapsible
+{
+    background-color: inherit;
+    color: inherit;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border-left: 4px solid gainsboro;
+    border-right: 4px solid gainsboro;
+    border-top: 5px dashed gainsboro;
+    text-align: center;
+    outline: none;
+    font-size: inherit;
+}
+
+.content 
+{
+    color: inherit;
+    border-left: 4px solid gainsboro;
+    border-right: 4px solid gainsboro;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    word-wrap: break-word;
+    transition: max-height 0.2s ease-out;
+    background-color: inherit;
+    text-align: center;
+    font-size: 0.7em;
+}
+
+.rsbutton
+{
+    font-family: 'atari';
+    font-size: 0.6em;
+    text-transform: uppercase;
+    background-color: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+#light:hover{
+    background: linear-gradient(1deg, yellow, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    cursor: pointer;
+}
+
+#dark:hover{
+    background: linear-gradient(1deg, blue, darkviolet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+#di{
+    border-top: 4px solid gainsboro;
+}
+
+#df{
+    border-bottom: 4px solid gainsboro;
+}
+
+input[type='text'], input[type='email'] {
+    background-color: #cccccc; 
+    float:left; 
+    width: 90%;
+    position: relative;
+    border-radius: 5px;
+}
+
+input[type='radio']:after {
+    width: 0.9em;
+    height: 0.9em;
+    position: relative;
+    border-radius: 15px;
+    background-color: #cccccc;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 0.2em solid dimgrey;
+}
+
+input[type='radio']:checked:after {
+    width: 0.9em;
+    height: 0.9em;
+    position: relative;
+    border-radius: 15px;
+    background-color: darkorange;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 0.2em solid dimgrey;
+}
